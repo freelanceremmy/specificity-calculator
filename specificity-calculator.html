@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Specificity Calculator</title>
+  <link rel="stylesheet" href="specificity-calculator.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Specificity Calculator</h1>
+    <p>
+      A visual way to understand CSS specificity. Change the selectors or paste in your own
+    </p>
+    <p>Enter one or more CSS selectors (one per line) to calculate their specificity.</p>
+    
+    <textarea id="selectorsInput" placeholder="Example:&#10;.class1 #id1 div:hover&#10;body .container > p"></textarea>
+    
+    <button id="calculateBtn">Calculate Specificity</button>
+    
+    <div id="results" aria-live="polite"></div>
+  </div>
+  
+  <script src="specificity-calculator.js"></script>
+</body>
+</html>
